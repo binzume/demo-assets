@@ -1,11 +1,13 @@
 const fs = require('fs');
 const path = require('path');
-const targets = ['images', 'videos', 'models'];
+const targets = ['images', 'videos', 'models', 'README.md'];
 const types = {
     '.vrm': 'application/vrm',
+    '.glb': 'model/gltf-binary',
     '.jpg': 'image/jpeg',
     '.png': 'image/png',
     '.mp4': 'video/mp4',
+    '.md': 'text/plain',
 };
 
 let files = [];
